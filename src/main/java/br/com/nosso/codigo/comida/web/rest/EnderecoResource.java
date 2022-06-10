@@ -103,7 +103,7 @@ public class EnderecoResource {
      *     * @return the {@link Response} with status {@code 200 (OK)} and the list of enderecos in body.
      */
     @GET
-    public List<Endereco> getAllEnderecos(@RequestParam(required = false) String filter) {
+    public List<Endereco> getAllEnderecos(@QueryParam("filter") String filter) {
         log.debug("REST request to get all Enderecos");
         return Endereco.findAll().list();
     }

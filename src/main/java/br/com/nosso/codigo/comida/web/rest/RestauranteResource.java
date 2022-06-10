@@ -103,7 +103,7 @@ public class RestauranteResource {
      *     * @return the {@link Response} with status {@code 200 (OK)} and the list of restaurantes in body.
      */
     @GET
-    public List<Restaurante> getAllRestaurantes(@RequestParam(required = false) String filter) {
+    public List<Restaurante> getAllRestaurantes(@QueryParam("filter") String filter) {
         log.debug("REST request to get all Restaurantes");
         return Restaurante.findAll().list();
     }
