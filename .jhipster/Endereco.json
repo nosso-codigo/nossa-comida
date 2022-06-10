@@ -1,0 +1,29 @@
+{
+  "name": "Endereco",
+  "fields": [
+    {
+      "fieldName": "rua",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "restaurante",
+      "otherEntityRelationshipName": "endereco",
+      "relationshipName": "restaurante",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "tb_endereco",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["nossaComida"],
+  "changelogDate": "20220610004248",
+  "dataAccess": "activeRecord"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Cardapio",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "restaurante",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "restaurante",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "prato",
+      "otherEntityRelationshipName": "cardapio",
+      "relationshipName": "prato"
+    }
+  ],
+  "entityTableName": "tb_cardapio",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["nossaComida"],
+  "changelogDate": "20220610004448",
+  "dataAccess": "activeRecord"
+}

@@ -1,0 +1,25 @@
+{
+  "nossaComidaApp": {
+    "prato": {
+      "home": {
+        "title": "Pratoes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Prato",
+        "createOrEditLabel": "Create or edit a Prato",
+        "notFound": "No Pratoes found"
+      },
+      "created": "A new Prato is created with identifier {{ param }}",
+      "updated": "A Prato is updated with identifier {{ param }}",
+      "deleted": "A Prato is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Prato {{ id }}?"
+      },
+      "detail": {
+        "title": "Prato"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "cardapio": "Cardapio"
+    }
+  }
+}

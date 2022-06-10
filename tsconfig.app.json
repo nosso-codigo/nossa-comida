@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./target/classes/META-INF/resourcesapp",
+    "types": []
+  },
+  "files": ["src/main/webapp/main.ts", "src/main/webapp/polyfills.ts"],
+  "include": ["src/main/webapp/**/*.d.ts"]
+}

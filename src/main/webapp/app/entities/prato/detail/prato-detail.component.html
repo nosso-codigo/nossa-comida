@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="prato">
+      <h2 data-cy="pratoDetailsHeading"><span jhiTranslate="nossaComidaApp.prato.detail.title">Prato</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ prato.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="nossaComidaApp.prato.nome">Nome</span></dt>
+        <dd>
+          <span>{{ prato.nome }}</span>
+        </dd>
+        <dt><span jhiTranslate="nossaComidaApp.prato.cardapio">Cardapio</span></dt>
+        <dd>
+          <div *ngIf="prato.cardapio">
+            <a [routerLink]="['/cardapio', prato.cardapio?.id, 'view']">{{ prato.cardapio?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/prato', prato.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

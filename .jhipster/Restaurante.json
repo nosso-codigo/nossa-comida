@@ -1,0 +1,36 @@
+{
+  "name": "Restaurante",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "endereco",
+      "otherEntityRelationshipName": "restaurante",
+      "relationshipName": "endereco",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "cardapio",
+      "otherEntityRelationshipName": "restaurante",
+      "relationshipName": "cardapio",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "tb_restaurante",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["nossaComida"],
+  "changelogDate": "20220610004348",
+  "dataAccess": "activeRecord"
+}

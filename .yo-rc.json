@@ -1,0 +1,59 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "clientFramework": "angularX",
+    "serverPort": "8080",
+    "serviceDiscoveryType": false,
+    "skipUserManagement": false,
+    "withAdminUi": true,
+    "baseName": "nossaComida",
+    "buildTool": "maven",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en"],
+    "messageBroker": false,
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "monolith",
+    "packageName": "br.com.nosso.codigo.comida",
+    "packageFolder": "br/com/nosso/codigo/comida",
+    "jhipsterVersion": "7.1.0",
+    "skipServer": false,
+    "clientPackageManager": "npm",
+    "dtoSuffix": "DTO",
+    "entitySuffix": "",
+    "reactive": false,
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "applicationIndex": 0,
+    "entities": ["Endereco", "Restaurante", "Cardapio", "Prato"],
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "2.0.0-beta.1"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "2.0.0-beta.1"
+      }
+    ],
+    "pages": [],
+    "nativeLanguage": "en",
+    "creationTimestamp": 1654821708479,
+    "jwtSecretKey": "MjQ3NWE0NWEyODIzOGQ4MjJhNzQ2NjRhZDE2YWY4OGQ3YzJmZjVlMDRlZmNlM2UzNTM3ZGExN2RlNjQzM2ZhZThkMjU1M2IwMzZkNWMwZjViMmM3OGUxMjVhZTRiYmY1MjhmMzBlMjAxZWJlZGRkYTAwNjZhMTY2Nzc5ZmNjMGM=",
+    "devServerPort": 4200,
+    "lastLiquibaseTimestamp": 1654821948000
+  }
+}

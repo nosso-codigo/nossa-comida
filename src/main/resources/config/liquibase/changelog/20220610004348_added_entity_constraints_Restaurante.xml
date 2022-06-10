@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity Restaurante.
+    -->
+    <changeSet id="20220610004348-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="endereco_id"
+                                 baseTableName="tb_restaurante"
+                                 constraintName="fk_tb_restaurante__endereco_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_endereco"/>
+    </changeSet>
+</databaseChangeLog>

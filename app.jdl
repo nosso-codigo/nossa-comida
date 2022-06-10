@@ -1,0 +1,37 @@
+
+application {
+  config {
+    baseName nossaComida,
+    applicationType monolith,
+    packageName br.com.nosso.codigo.comida,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular
+  }
+  entities *
+}
+
+entity Endereco (tb_endereco) {
+	rua String
+}
+
+entity Restaurante (tb_restaurante) {
+	nome String
+}
+
+entity Cardapio (tb_cardapio) {
+	nome String
+}
+
+entity Prato (tb_cardapio_prato) {
+	nome String
+}
+
+relationship OneToMany {
+  Cardapio to Prato
+}
+
+relationship OneToOne {
+	Cardapio to Restaurante
+    Restaurante to Endereco
+}
