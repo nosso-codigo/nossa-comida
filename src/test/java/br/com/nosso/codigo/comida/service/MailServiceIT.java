@@ -24,7 +24,7 @@ public class MailServiceIT {
     MailService mailService;
 
     private static final String[] languages = {
-        "en",
+        "pt-BR",
         // jhipster-needle-i18n-language-constant - JHipster will add/remove languages in this array
     };
 
@@ -37,7 +37,7 @@ public class MailServiceIT {
         User user = new User();
         user.login = "john";
         user.email = "john.doe@example.com";
-        user.langKey = "en";
+        user.langKey = "pt-BR";
 
         return user;
     }

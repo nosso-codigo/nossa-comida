@@ -35,7 +35,7 @@ public class UserMapperTest {
         user.firstName = "john";
         user.lastName = "doe";
         user.imageUrl = "image_url";
-        user.langKey = "en";
+        user.langKey = "pt-BR";
 
         userDto = new UserDTO(user);
     }

@@ -20,6 +20,7 @@
     "test": "ng test --coverage --log-heap-usage -w=2",
     "test:watch": "npm run test -- --watch",
     "watch": "concurrently npm:start npm:backend:start",
+    "webapp:watch:dev": "ng build --watch --configuration development",
     "webapp:build": "npm run clean-www && npm run webapp:build:dev",
     "webapp:build:dev": "ng build --configuration development",
     "webapp:build:prod": "ng build --configuration production",

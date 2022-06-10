@@ -50,7 +50,7 @@ public class UserResourceTest {
     private static final String DEFAULT_IMAGEURL = "http://placehold.it/50x50";
     private static final String UPDATED_IMAGEURL = "http://placehold.it/40x40";
 
-    private static final String DEFAULT_LANGKEY = "en";
+    private static final String DEFAULT_LANGKEY = "pt-BR";
     private static final String UPDATED_LANGKEY = "fr";
 
     String adminToken;
@@ -446,7 +446,7 @@ public class UserResourceTest {
         otherManagedUserVM.firstName = "java";
         otherManagedUserVM.lastName = "hipster";
         otherManagedUserVM.imageUrl = "";
-        otherManagedUserVM.langKey = "en";
+        otherManagedUserVM.langKey = "pt-BR";
 
         given()
             .auth()
@@ -522,7 +522,7 @@ public class UserResourceTest {
         otherManagedUserVM.firstName = "java";
         otherManagedUserVM.lastName = "hipster";
         otherManagedUserVM.imageUrl = "";
-        otherManagedUserVM.langKey = "en";
+        otherManagedUserVM.langKey = "pt-BR";
 
         given()
             .auth()

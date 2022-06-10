@@ -156,7 +156,7 @@ public class AccountResourceTest {
         user.lastName = "doe";
         user.email = "john.doe@jhipster.com";
         user.imageUrl = "http://placehold.it/50x50";
-        user.langKey = "en";
+        user.langKey = "pt-BR";
 
         registerUser(user);
         activateUser(user.email);

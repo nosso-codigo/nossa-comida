@@ -39,7 +39,7 @@
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
         <maven-checkstyle.version>3.1.0</maven-checkstyle.version>
-        <frontend-maven-plugin.version>1.6</frontend-maven-plugin.version>
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
         <git-commit-id-plugin.version>4.0.0</git-commit-id-plugin.version>
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
         <properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
@@ -231,6 +231,10 @@
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
                         <version>${frontend-maven-plugin.version}</version>
+                        <configuration>
+                            <nodeVersion>${node.version}</nodeVersion>
+                            <npmVersion>${npm.version}</npmVersion>
+                        </configuration>
                     </plugin>
                 <plugin>
                     <groupId>pl.project13.maven</groupId>
@@ -547,10 +551,6 @@
                                 <goals>
                                     <goal>install-node-and-npm</goal>
                                 </goals>
-                                <configuration>
-                                    <nodeVersion>${node.version}</nodeVersion>
-                                    <npmVersion>${npm.version}</npmVersion>
-                                </configuration>
                             </execution>
                             <execution>
                                 <id>npm install</id>

@@ -15,7 +15,7 @@
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
     "jhiPrefix": "jhi",
-    "languages": ["en"],
+    "languages": ["pt-BR"],
     "messageBroker": false,
     "prodDatabaseType": "mysql",
     "searchEngine": false,
@@ -50,7 +50,7 @@
       }
     ],
     "pages": [],
-    "nativeLanguage": "en",
+    "nativeLanguage": "pt-BR",
     "creationTimestamp": 1654821708479,
     "jwtSecretKey": "MjQ3NWE0NWEyODIzOGQ4MjJhNzQ2NjRhZDE2YWY4OGQ3YzJmZjVlMDRlZmNlM2UzNTM3ZGExN2RlNjQzM2ZhZThkMjU1M2IwMzZkNWMwZjViMmM3OGUxMjVhZTRiYmY1MjhmMzBlMjAxZWJlZGRkYTAwNjZhMTY2Nzc5ZmNjMGM=",
     "devServerPort": 4200,
