@@ -2,19 +2,19 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <h2 jhiTranslate="settings.title" [translateValues]="{ username: account.login }" *ngIf="account">
-        User settings for [<strong>{{ account.login }}</strong
+        Configurações de usuário para [<strong>{{ account.login }}</strong
         >]
       </h2>
 
       <div class="alert alert-success" *ngIf="success" jhiTranslate="settings.messages.success">
-        <strong>Settings saved!</strong>
+        <strong>Configurações salvas!</strong>
       </div>
 
       <jhi-alert-error></jhi-alert-error>
 
       <form name="form" role="form" (ngSubmit)="save()" [formGroup]="settingsForm" *ngIf="account" novalidate>
         <div class="form-group">
-          <label class="form-control-label" for="firstName" jhiTranslate="settings.form.firstname">First Name</label>
+          <label class="form-control-label" for="firstName" jhiTranslate="settings.form.firstname">Nome</label>
           <input
             type="text"
             class="form-control"
@@ -35,7 +35,7 @@
               *ngIf="settingsForm.get('firstName')?.errors?.required"
               jhiTranslate="settings.messages.validate.firstname.required"
             >
-              Your first name is required.
+              Nome é um campo obrigatório.
             </small>
 
             <small
@@ -43,7 +43,7 @@
               *ngIf="settingsForm.get('firstName')?.errors?.minlength"
               jhiTranslate="settings.messages.validate.firstname.minlength"
             >
-              Your first name is required to be at least 1 character.
+              Nome deve ter ao menos 1 caractere.
             </small>
 
             <small
@@ -51,7 +51,7 @@
               *ngIf="settingsForm.get('firstName')?.errors?.maxlength"
               jhiTranslate="settings.messages.validate.firstname.maxlength"
             >
-              Your first name cannot be longer than 50 characters.
+              Nome
             </small>
           </div>
         </div>

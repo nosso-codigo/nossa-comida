@@ -16,7 +16,7 @@
       "account": {
         "main": "Conta",
         "settings": "Configurações",
-        "password": "Password",
+        "password": "Senha",
         "sessions": "Sessions",
         "login": "Acessar",
         "logout": "Sair",
@@ -39,8 +39,8 @@
     "form": {
       "username.label": "Nome de usuário",
       "username.placeholder": "Escolha um nome de usuário...",
-      "currentpassword.label": "Current password",
-      "currentpassword.placeholder": "Current password",
+      "currentpassword.label": "Senha atual",
+      "currentpassword.placeholder": "Insira sua senha atual...",
       "newpassword.label": "Senha",
       "newpassword.placeholder": "Insira a senha desejada...",
       "confirmpassword.label": "Confirmação da senha",

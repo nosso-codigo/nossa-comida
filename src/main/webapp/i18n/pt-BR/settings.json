@@ -1,6 +1,6 @@
 {
   "settings": {
-    "title": "User settings for [<strong>{{username}}</strong>]",
+    "title": "Configurações de usuário para [<strong>{{username}}</strong>]",
     "form": {
       "firstname": "First Name",
       "firstname.placeholder": "Your first name",
@@ -14,11 +14,11 @@
         "fail": "<strong>An error has occurred!</strong> Settings could not be saved.",
         "emailexists": "<strong>Email is already in use!</strong> Please choose another one."
       },
-      "success": "<strong>Settings saved!</strong>",
+      "success": "<strong>Configurações salvas!</strong>",
       "validate": {
         "firstname": {
-          "required": "Your first name is required.",
-          "minlength": "Your first name is required to be at least 1 character",
+          "required": "Nome é um campo obrigatório.",
+          "minlength": "Nome deve ter ao menos 1 caractere.",
           "maxlength": "Your first name cannot be longer than 50 characters"
         },
         "lastname": {
