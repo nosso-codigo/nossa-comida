@@ -1,16 +1,16 @@
 {
   "register": {
-    "title": "Registration",
+    "title": "Cadastro",
     "form": {
-      "button": "Register"
+      "button": "Cadastrar"
     },
     "messages": {
       "validate": {
         "login": {
-          "required": "Your username is required.",
-          "minlength": "Your username is required to be at least 1 character.",
-          "maxlength": "Your username cannot be longer than 50 characters.",
-          "pattern": "Your username is invalid."
+          "required": "Nome de usuário é um campo obrigatório.",
+          "minlength": "Nome de usuário requer ao menos 4 caracteres.",
+          "maxlength": "Nome de usuário não pode ter mais que 50 caracteres.",
+          "pattern": "Nome de usuário deve conter apenas letras e dígitos."
         }
       },
       "success": "<strong>Registration saved!</strong> Please check your email for confirmation.",

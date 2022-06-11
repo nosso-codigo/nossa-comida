@@ -25,7 +25,7 @@ export class RegisterComponent implements AfterViewInit {
       '',
       [
         Validators.required,
-        Validators.minLength(1),
+        Validators.minLength(4),
         Validators.maxLength(50),
         Validators.pattern('^[a-zA-Z0-9!$&*+=?^_`{|}~.-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$|^[_.@A-Za-z0-9-]+$'),
       ],

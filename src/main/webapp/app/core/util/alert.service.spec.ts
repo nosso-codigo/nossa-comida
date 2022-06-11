@@ -20,7 +20,7 @@ describe('Alert service test', () => {
         ],
       });
       const translateService = TestBed.inject(TranslateService);
-      translateService.setDefaultLang('en');
+      translateService.setDefaultLang('pt-BR');
       jest.useFakeTimers();
       extAlerts = [];
     });
@@ -246,7 +246,7 @@ describe('Alert service test', () => {
     it('should produce a info message with translated message if key exists', inject(
       [AlertService, TranslateService],
       (service: AlertService, translateService: TranslateService) => {
-        translateService.setTranslation('en', {
+        translateService.setTranslation('pt-BR', {
           'hello.jhipster': 'Translated message',
         });
         expect(service.addAlert({ type: 'info', message: 'Hello Jhipster', translationKey: 'hello.jhipster' })).toEqual(

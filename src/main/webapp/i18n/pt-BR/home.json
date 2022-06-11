@@ -1,11 +1,10 @@
 {
   "home": {
-    "title": "Welcome, Java Hipster!",
-    "subtitle": "",
+    "title": "Nossa Comida",
+    "subtitle": "Bem vindo ao Nossa Comida",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
-    "question": "If you have any question on JHipster:",
     "like": "Veja nosso código em github.com/nosso-codigo/nossa-comida e não esqueça de dar uma estrela no",
     "github": "GitHub"
   }

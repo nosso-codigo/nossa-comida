@@ -69,7 +69,7 @@ module.exports = (config, options, targetOptions) => {
           */
         },
         {
-          reload: targetOptions.target === 'build', // enabled for build --watch
+          reload: targetOptions.target === 'build --watch', // enabled for build --watch
         }
       )
     );
@@ -109,7 +109,7 @@ module.exports = (config, options, targetOptions) => {
     new MergeJsonWebpackPlugin({
       output: {
         groupBy: [
-          { pattern: './src/main/webapp/i18n/en/*.json', fileName: './i18n/en.json' },
+          { pattern: './src/main/webapp/i18n/pt-BR/*.json', fileName: './i18n/pt-BR.json' },
           // jhipster-needle-i18n-language-webpack - JHipster will add/remove languages in this array
         ],
       },

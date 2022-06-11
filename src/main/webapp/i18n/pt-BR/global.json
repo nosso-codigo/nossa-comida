@@ -7,20 +7,20 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
-        "endereco": "Endereco",
+        "endereco": "Endereço",
         "restaurante": "Restaurante",
-        "cardapio": "Cardapio",
+        "cardapio": "Cardápio",
         "prato": "Prato",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
-        "main": "Account",
-        "settings": "Settings",
+        "main": "Conta",
+        "settings": "Configurações",
         "password": "Password",
         "sessions": "Sessions",
-        "login": "Sign in",
-        "logout": "Sign out",
-        "register": "Register"
+        "login": "Acessar",
+        "logout": "Sair",
+        "register": "Cadastrar"
       },
       "admin": {
         "main": "Administration",
@@ -37,16 +37,16 @@
       "language": "Language"
     },
     "form": {
-      "username.label": "Username",
-      "username.placeholder": "Your username",
+      "username.label": "Nome de usuário",
+      "username.placeholder": "Escolha um nome de usuário...",
       "currentpassword.label": "Current password",
       "currentpassword.placeholder": "Current password",
-      "newpassword.label": "New password",
-      "newpassword.placeholder": "New password",
-      "confirmpassword.label": "New password confirmation",
-      "confirmpassword.placeholder": "Confirm the new password",
-      "email.label": "Email",
-      "email.placeholder": "Your email"
+      "newpassword.label": "Senha",
+      "newpassword.placeholder": "Insira a senha desejada...",
+      "confirmpassword.label": "Confirmação da senha",
+      "confirmpassword.placeholder": "Repita a senha...",
+      "email.label": "E-mail",
+      "email.placeholder": "Insira seu e-mail..."
     },
     "messages": {
       "info": {
@@ -61,25 +61,25 @@
         }
       },
       "error": {
-        "dontmatch": "The password and its confirmation do not match!"
+        "dontmatch": "As senhas não conferem! Por favor, digite a <b>Senha</b> e <b>Confirmação da senha</b> novamente."
       },
       "validate": {
         "newpassword": {
-          "required": "Your password is required.",
-          "minlength": "Your password is required to be at least 4 characters.",
-          "maxlength": "Your password cannot be longer than 50 characters.",
-          "strength": "Password strength:"
+          "required": "Senha é um campo obrigatório.",
+          "minlength": "Senha deve ter ao menos 4 caracteres.",
+          "maxlength": "Senha não pode ter mais que 50 caracteres.",
+          "strength": "Força da senha:"
         },
         "confirmpassword": {
-          "required": "Your confirmation password is required.",
-          "minlength": "Your confirmation password is required to be at least 4 characters.",
-          "maxlength": "Your confirmation password cannot be longer than 50 characters."
+          "required": "A confirmação da senha é obrigatória.",
+          "minlength": "A confirmação da senha deve ter ao menos 4 caracteres.",
+          "maxlength": "A confirmação da senha não pode ter mais de 50 caracteres."
         },
         "email": {
-          "required": "Your email is required.",
-          "invalid": "Your email is invalid.",
-          "minlength": "Your email is required to be at least 5 characters.",
-          "maxlength": "Your email cannot be longer than 50 characters."
+          "required": "E-mail é um campo obrigatório.",
+          "invalid": "E-mail inválido.",
+          "minlength": "E-mail deve tre ao menos 5 caracteres.",
+          "maxlength": "E-mail não pode ter mais que 100 caracteres."
         }
       }
     },
@@ -131,7 +131,7 @@
     "NotNull": "Field {{ fieldName }} cannot be empty!",
     "Size": "Field {{ fieldName }} does not meet min/max size requirements!",
     "userexists": "Login name already used!",
-    "emailexists": "Email is already in use!",
+    "emailexists": "<strong>E-mail já está em uso!</strong> Por favor, escolha um novo email ou tente recuperar a senha.",
     "idexists": "A new {{ entityName }} cannot already have an ID",
     "idnull": "Invalid ID",
     "idinvalid": "Invalid ID",

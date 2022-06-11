@@ -75,7 +75,7 @@
               (click)="collapseNavbar()"
             >
               <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.cardapio">Cardapio</span>
+              <span jhiTranslate="global.menu.entities.cardapio">Cardápio</span>
             </a>
           </li>
           <li>
@@ -192,7 +192,7 @@
           <li *ngSwitchCase="true">
             <a class="dropdown-item" routerLink="account/settings" routerLinkActive="active" (click)="collapseNavbar()" data-cy="settings">
               <fa-icon icon="wrench" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.account.settings">Settings</span>
+              <span jhiTranslate="global.menu.account.settings">Configurações</span>
             </a>
           </li>
           <li *ngSwitchCase="true">
@@ -204,25 +204,25 @@
               data-cy="passwordItem"
             >
               <fa-icon icon="lock" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.account.password">Password</span>
+              <span jhiTranslate="global.menu.account.password">Senha</span>
             </a>
           </li>
           <li *ngSwitchCase="true">
             <a class="dropdown-item" (click)="logout()" id="logout" data-cy="logout">
               <fa-icon icon="sign-out-alt" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.account.logout">Sign out</span>
+              <span jhiTranslate="global.menu.account.logout">Sair</span>
             </a>
           </li>
           <li *ngSwitchCase="false">
             <a class="dropdown-item" (click)="login()" id="login" data-cy="login">
               <fa-icon icon="sign-in-alt" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.account.login">Sign in</span>
+              <span jhiTranslate="global.menu.account.login">Acessar</span>
             </a>
           </li>
           <li *ngSwitchCase="false">
             <a class="dropdown-item" routerLink="account/register" routerLinkActive="active" (click)="collapseNavbar()" data-cy="register">
               <fa-icon icon="user-plus" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.account.register">Register</span>
+              <span jhiTranslate="global.menu.account.register">Cadastrar</span>
             </a>
           </li>
         </ul>

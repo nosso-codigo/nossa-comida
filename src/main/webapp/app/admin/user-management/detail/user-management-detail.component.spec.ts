@@ -20,7 +20,7 @@ describe('Component Tests', () => {
             {
               provide: ActivatedRoute,
               useValue: {
-                data: of({ user: new User(123, 'user', 'first', 'last', 'first@last.com', true, 'en', [Authority.USER], 'admin') }),
+                data: of({ user: new User(123, 'user', 'first', 'last', 'first@last.com', true, 'pt-BR', [Authority.USER], 'admin') }),
               },
             },
           ],
@@ -49,7 +49,7 @@ describe('Component Tests', () => {
             lastName: 'last',
             email: 'first@last.com',
             activated: true,
-            langKey: 'en',
+            langKey: 'pt-BR',
             authorities: [Authority.USER],
             createdBy: 'admin',
           })
